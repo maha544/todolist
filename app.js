@@ -42,7 +42,7 @@ function delFun(elem) {
 function editFun(elem) {
     var newText = prompt("Edit Text :");
     if (newText !== null) {
-        elem.parentNode.innerHTML = newText;
+        elem.parentNode.childNodes[0].nodeValue = newText;
     }
 }
 
